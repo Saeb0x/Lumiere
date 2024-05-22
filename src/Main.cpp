@@ -1,7 +1,9 @@
 ﻿#include "Lumiere.h"
 
+using namespace Lumiere::Utils;
+
 int main()
 {
-	std::cout << "Hello World" << std::endl;
+	Logger::Log(LogLevel::Error, "An error occured in ", __FUNCTION__, " function");
 	std::cin.get();
 }
