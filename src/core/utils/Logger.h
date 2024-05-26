@@ -33,6 +33,8 @@ namespace Lumiere
 			{
 				newLogLevel <= LogLevel::Fatal ? m_CurrentLogLevel = newLogLevel : m_CurrentLogLevel = LogLevel::Fatal;
 			}
+
+			inline static const unsigned int GetCurrentLogLevel() { return static_cast<unsigned int>(m_CurrentLogLevel); }
 		private:
 			static LogLevel m_CurrentLogLevel;
 		};
